@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up | Odin Project</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- OPTIONAL: Add custom Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- LEFT SIDE (Image + logo overlay) -->
+    <div class="left-panel">
+      <div class="logo-banner">
+        <img src="images/odin-logo.png" alt="Odin Logo">
+        <h1>ODIN</h1>
+      </div>
+      <p class="credit">Photo by [Photographer] on Unsplash</p>
+    </div>
+
+    <!-- RIGHT SIDE (Main form) -->
+    <div class="right-panel">
+
+      <h2>Start your journey</h2>
+      <p class="subtitle">Fill in the information below to create an account.</p>
+
+      <form class="signup-form" novalidate>
+        
+        <div class="form-row">
+          <div class="field">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" required>
+          </div>
+
+          <div class="field">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" required minlength="8">
+          </div>
+
+          <div class="field">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" required minlength="8">
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Create Account</button>
+        <p class="login-text">Already have an account? <a href="#">Log in</a></p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
